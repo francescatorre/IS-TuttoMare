@@ -1,0 +1,261 @@
+/* CSS per il Carrello*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+.row::after {
+             content: "";
+             clear: both;
+             display: table;
+            }
+
+[class*="col-"] {
+                 float: left;
+                 padding: 15px;
+                }
+                
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}   
+
+/* For mobile phones: */
+[class*="col-"] {
+                 width: 100%;
+                }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html {
+	font-size: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.Carrello {
+	margin-left: 10%;
+	margin-top: 2%;
+	color:green;
+}
+
+.FormProdottiC {
+	border: 3px solid green;
+	margin-left: 10%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+.ProdottoCarrello {
+	
+}
+
+.ImmagineP {
+	width: 60%;
+	height: 40%;
+}
+
+.NomeP {
+	font-size: 120%;
+}
+
+.descrizioneP {
+	font-size: 110%;
+}
+
+.Prezzo {
+	font-size: 110%;
+	color: green;
+	text-transform: uppercase;
+}
+.Prezzo span{color:black;}
+
+.Quantita {
+	font-size: 110%;
+	text-transform: uppercase;
+}
+
+#plus {
+	width: 50px;
+	color: black;
+     font-size : 120%;
+	height: 50px;
+	font-size: 120%;
+}
+
+.cancella {
+	background-image: url('../icone/false.png');
+	background-position: center;
+	font-size: 0px;
+	height: 22px;
+	width: 22px;}
+	
+.btnAcquista {
+	text-align: center;
+	font-size: 150%;
+	color: white;
+	text-transform:uppercase;
+	background-color: green;
+	margin-top:3%;
+}
+
+.Totale {
+	margin-right:3%;
+	float: right;
+	color: green;
+	font-size: 150%;
+}
+/*Per tablet*/
+@media screen and (max-width: 765px){
+
+
+.Carrello {
+	margin-left: 2;
+	margin-top: 2%;
+
+}
+
+.FormProdottiC {
+	border: 3px solid green;
+	margin-left: 1%;
+	margin-bottom:2%;
+}
+
+
+.ImmagineP {
+	width: 60%;
+	height: 40%;
+}
+
+.NomeP {
+	font-size: 100%;
+}
+
+.descrizioneP {
+	font-size: 90%;
+}
+
+.Prezzo {
+	font-size: 100%;
+}
+
+.Quantita {
+	font-size: 90%;
+}
+
+#plus {
+	width: 40px;
+    font-size : 100%;
+	height: 40px;
+}
+
+
+.btnAcquista {
+	text-align: center;
+	font-size: 110%;
+	color: white;
+	text-transform:uppercase;
+	background-color: green;
+	margin-top:2%;
+}
+
+.Totale {
+	margin-right:3%;
+	float: right;
+	color: green;
+	font-size: 110%;
+}
+	
+}
+/*Per tablet*/
+@media screen and (max-width: 598px){
+
+
+.Carrello {
+	margin-left: 2;
+	margin-top: 2%;
+
+}
+
+.FormProdottiC {
+	border: 3px solid green;
+	margin-left: 0%;
+	margin-bottom:0%;
+	text-align: center;
+}
+
+
+.ImmagineP {
+	width: 30%;
+	height: 30%;
+}
+
+.NomeP {
+	font-size: 90%;
+}
+
+.descrizioneP {
+	font-size: 90%;
+}
+
+.Prezzo {
+	font-size: 100%;
+}
+
+.Quantita {
+	font-size: 90%;
+}
+
+#plus {
+	width: 40px;
+    font-size : 100%;
+	height: 40px;
+}
+
+
+.btnAcquista {
+	text-align: center;
+	font-size: 110%;
+	color: white;
+	text-transform:uppercase;
+	background-color: green;
+	margin-top:2%;
+}
+
+.Totale {
+	margin-right:3%;
+	float: right;
+	color: green;
+	font-size: 110%;
+}
+	
+}

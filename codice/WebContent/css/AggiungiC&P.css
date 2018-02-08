@@ -1,0 +1,148 @@
+/*CSS per aggiungi categoria e aggiungi prodotto */
+* {
+    box-sizing: border-box;
+  }
+  
+.row::after {
+             content: "";
+             clear: both;
+             display: table;
+            }
+
+[class*="col-"] {
+                 float: left;
+                 padding: 15px;
+                }
+                
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}   
+
+/* For mobile phones: */
+[class*="col-"] {
+                 width: 100%;
+                }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html {
+	font-size: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 2000px) {
+	/*Aggiungi */
+	.TitoloA {
+		height: 70px;
+		margin-top: 3%;
+		background-color: #333;
+		color: white;
+		text-align: center;
+		border-radius: 5px;
+	}
+	.FormA {
+		font-size: 110%;
+		border: 1px solid black;
+		margin: 5% 25%;
+		text-align: left;
+		background-color: #EDEEE8;
+	}
+	label {
+		padding-top: 3%;
+		font-size: 110%;
+		font-weight: bold;
+		margin-left: 15%;
+		margin-top: 20%;
+		font-size: 110%;
+	}
+	.input {
+		margin-left: 15%;
+		margin-top: 1%;
+		width: 50%;
+		font-size: 110%;
+	}
+	.sottoCat, .evidenza {
+		widht: 50%;
+		font-size: 110%;
+		margin-left: 15%;
+	}
+	.descrizione {
+		margin-left: 15%;
+		font-size: 130%;
+		width: 50%;
+	}
+	.submit {
+		margin-top: 40%;
+		font-size: 110%;
+		color: white;
+		background-color: #5F84CE;
+	}
+	.anteprima {
+		margin-left: 40%;
+		text-align: center;
+	}
+	#anteprima_immagine {
+		width: 100%;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.anteprima {
+		margin-left: 10%;
+	}
+	#anteprima_immagine {
+		width: 100px;
+		height: 80px;
+	}
+	.FormA {
+		font-size: 90%;
+		margin: 5% 0%;
+		width: 100%;
+	}
+	.input {
+		width: 50%;
+		font-size: 100%;
+	}
+	.sottoCat, .evidenza {
+		widht: 50%;
+		font-size: 100%;
+		margin-left: 15%;
+	}
+	.descrizione {
+		margin-left: 15%;
+		font-size: 120%;
+		width: 50%;
+	}
+}

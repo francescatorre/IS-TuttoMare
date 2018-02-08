@@ -1,0 +1,260 @@
+/* CSS per la visualizzazione di tutti i prodotti per sottoCategoria*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+.row::after {
+             content: "";
+             clear: both;
+             display: table;
+            }
+
+[class*="col-"] {
+                 float: left;
+                 padding: 15px;
+                }
+                
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}   
+
+/* For mobile phones: */
+[class*="col-"] {
+                 width: 100%;
+                }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html {
+	font-size: 100%;
+	width: 100%;
+	height: 100%;
+	
+}
+/*css per i prodotti*/
+.divProdotto{ 
+	          border: 2px solid gray;
+              background-color: white;
+              padding: 16px;
+              margin: 3% 2%;
+              text-align:center;
+            }
+            
+ .divProdotto:hover{
+                     border: 2px solid #5F84CE;
+                   }
+ 
+.imgProdotto{
+	         width: 90%;
+             float: left;
+             margin-left:5%;
+           
+            }
+
+.nomeP{
+	   font-size: 200%;
+	   text-decoration:none;
+	   text-transform:uppercase;
+	   text-align:left;
+       margin-top:5%;
+       font-weight:150px; 
+      }
+.imgP{ 
+     margin-top:2%;
+     }
+.i{float:left;
+   margin:0;  
+   margin-top:2%;
+   }
+.it{ 
+margin-top:2%;
+   }    
+       
+.descrizioneP{ 
+               text-align:left;
+               font-size:120%;
+              } 
+.Consegna{
+	   font-size: 110%;
+       margin-top:100px;
+       text-transform: uppercase;
+       color:#5F84CE;
+       }
+       
+.prova{
+	    margin-top:5%;
+        font-size:80%;
+        float:left;
+       }
+
+.ACarrello {
+	width: 20%;
+	margin-top: 4%;
+}
+
+.ACarrello:hover {
+	opacity: 0.9;
+	 }                     
+
+.prezzoP{ 
+	      font-size:250%;
+          text-align:right;
+          color:red;
+          margin-top:2%;
+         }
+         
+.ProdottoEsaurito {
+	               font-size:130%;
+	               text-transform:uppercase;
+	               color:red;
+                  } 
+                        
+/*Barra dei filitr*/
+
+.form {
+	color: black;
+	background-color: #5F84CE;
+	padding: 0px;
+	margin-top: 1%;
+	border:1px solid black;
+}
+
+#p_min {
+	font-size: 100%;
+}
+
+.prezzo {
+	font-size: 80%;
+}
+
+.range {
+	width: 5%;
+	margin: 0% 2%;
+	paddin: 0;
+}
+
+.Marca_filtri {
+	margin-left: 3%;
+	margin-top: 1%;
+}
+
+.select_marca {
+	margin-left: 2%;
+	margin-right: 3%;
+
+}
+.br{
+	display: none;
+	}
+
+/*Per smartphone e tablet*/
+@media screen and (max-width: 986px){
+	.br {
+		display: inline;
+	}
+	.range {
+		width: 20%;
+	}
+	.select_marca {
+		width: 30%;
+		margin-left: 2%;
+		margin-right: 3%;
+	}
+	.Marca_filtri {
+		margin: 0px;
+	}
+	.form {
+		text-align: left;
+	}
+/*css per i prodotti*/
+.divProdotto{ 
+	          border: 2px solid gray;
+              background-color: white;
+              padding: 16px;
+              margin: 3% 2%;
+              text-align:center;
+            }
+            
+ .divProdotto:hover{
+                     border: 2px solid #5F84CE;
+                   }
+ 
+.imgProdotto{
+	         width: 60%;
+             float: left;
+             margin-left:20%;
+            }
+
+.nomeP{
+	   font-size: 100%;
+	   margin-top:5%;
+       font-weight:100px; 
+      }
+
+.descrizioneP{ 
+               text-align:left;
+               font-size:80%;
+              } 
+.Consegna{
+	   font-size: 80%;
+       margin-top:80px;
+       text-transform: uppercase;
+       color:#5F84CE;
+       }
+.ProdottoEsaurito {
+	               font-size:110%;
+	               text-transform:uppercase;
+	               color:red;
+                  }        
+       
+.prova{
+	    margin-top:5%;
+        font-size:50%;
+        float:left;
+       }
+     
+.ACarrello {
+		width: 20%;
+		margin-top: 4%;
+	}
+	.ACarrello:hover {
+		opacity: 0.9;
+	}
+	.prezzoP{ 
+	      font-size:120%;
+          text-align:right;
+          color:red;
+          margin-top:2%;
+         }
+}

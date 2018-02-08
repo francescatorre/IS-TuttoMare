@@ -1,0 +1,153 @@
+/*CSS per la visualizzazione delle sotto categorie per categoria selezionata*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+.row::after {
+             content: "";
+             clear: both;
+             display: table;
+            }
+
+[class*="col-"] {
+                 float: left;
+                 padding: 15px;
+                }
+                
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}   
+
+/* For mobile phones: */
+[class*="col-"] {
+                 width: 100%;
+                }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html {
+	font-size: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.BarraCat {
+	height: 70px;
+	margin-top: 3%;
+	background-color: #333;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+.SottoCategorie {
+	margin-left: 5.5%;
+	width: 100%;
+}
+
+.SottoCategorie div {
+	background-color: #EDEEE8;
+	margin-right: 7%;
+	margin-top: 3%;
+	height: 220px;
+}
+
+
+.titoloSCategoria {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 150%;
+	margin-bottom: 8%; 
+	font-weight : bold;
+	text-decoration: none;
+}
+
+.linkP:link {
+	color: #5F84CE;;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+/*  link visitati */
+.linkP:visited {
+	color:#5F84CE;;
+	font-weight: bold;
+}
+
+/* mouse sopra il link */
+.linkP:hover {
+	color: red;
+	font-weight: bold;
+}
+
+.linkP:active {
+	color:#5F84CE;;
+	font-weight: bold;
+}
+.DescrizioneSC{
+	font-size:120%;
+	text-align:center;
+}
+
+@media screen and (max-width: 1100px) {
+	/*Catalogo */
+	.BarraCat {
+		height: 60px;
+		margin-top: 3%;
+		font-size: 70%;
+		background-color: #333;
+		color: white;
+		text-align: center;
+		border-radius: 5px;
+	}
+	.SottoCategorie {
+		width: 100%;
+		overflow: scroll;
+		height: 600px;
+	}
+	.SottoCategorie div {
+		background-color: #EDEEE8;
+		margin-top: 3%;
+		margin-left: 0px;
+		height: 220px;
+	}
+	.SottoCategorie h1 {
+		text-align: center;
+		font-size: 110%;
+		font-weight: bold;
+		margin-bottom: 8%;
+		color: blue;
+	}
+}

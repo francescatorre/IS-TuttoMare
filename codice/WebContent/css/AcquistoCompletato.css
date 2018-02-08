@@ -1,0 +1,154 @@
+/* CSS per i dettagli dell'ordine effettuato*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+.row::after {
+             content: "";
+             clear: both;
+             display: table;
+            }
+
+[class*="col-"] {
+                 float: left;
+                 padding: 15px;
+                }
+                
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}   
+
+/* For mobile phones: */
+[class*="col-"] {
+                 width: 100%;
+                }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html {
+	font-size: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.titolo {
+	margin-left: 8.5%;
+	font-size: 150%;
+	color: green;
+	font-weight: 600;
+	margin-top: 2%;
+	text-transform: uppercase;
+}
+
+.OrdineCompletato {
+	border: 2px solid green;
+	margin-left: 8.5%;
+	margin-bottom: 3%;
+}
+
+/*Css per i prodotto acquistati*/
+.ProdottoAcquistato {
+	margin-top: 1%;
+	margin-left: 8.5%;
+	border: 1px solid black;
+}
+
+.h1 {
+	text-align: center; text-transform : uppercase;
+	font-size: 110%;
+	padding: 1%;
+	color: white;
+	background-color: green;
+	text-transform: uppercase;
+}
+
+.ImmagineP {
+	width: 50%;
+	height: 40%;
+}
+
+.NomeP {
+	font-size: 110%;
+}
+
+.descrizioneP {
+	font-size: 100%;
+}
+
+.dettagli  {
+	font-size: 140%;
+	font-weight: 300;
+	color: green;
+	text-transform: uppercase;
+}
+
+.Totale {
+	color: green;
+	font-size: 140%;
+	text-transform: uppercase;
+}
+
+/*Per  smartphone*/
+@media screen and (max-width: 599px) {
+	.titolo {
+		margin-left: 2%;
+	}
+	.OrdineCompletato {
+		border: 2px solid green;
+		margin-bottom: 3%;
+		margin-left: 0;
+	}
+	.ProdottoAcquistato {
+		margin-top: 1%;
+		margin-left: 1%;
+		border: 1px solid black;
+	}
+	.ImmagineP {
+		width: 40%;
+		height: 30%;
+	}
+	.NomeP {
+		font-size: 100%;
+	}
+	.descrizioneP {
+		font-size: 90%;
+	}
+	.dettagli {
+		font-size: 130%;
+	}
+	.Totale {
+		font-size: 130%;
+		text-transform: uppercase;
+	}
+}

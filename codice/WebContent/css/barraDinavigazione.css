@@ -1,0 +1,266 @@
+/*css non funzionanti*/
+body {
+	margin: 0;
+}
+html{font-size:100%;}
+ 
+/*for smartphone*/
+@media screen and (max-width: 900px) {
+	.contenitore_sottoMenu {
+		display: none;
+	}
+	
+	
+	#carrello{
+	width: 5%;
+
+	}
+	.avatarLogout{
+	width: 5%;
+	}
+	
+#barraS{
+background-color: #333;	
+width:100%;
+
+}
+
+	.headerForDesktop {
+		display: none;
+	}
+	/* Barra di ricerca*/
+	.barraRicerca {
+		margin-top: 2%;
+		margin-left: 2%;
+		width: 95.5%;
+		height: 40px;
+		border: 2px solid black;
+		border-radius: 4px;
+		font-size: 20px;
+		background-color: white;
+		background-image: url('../icone/icoRicerca.png');
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+	.barraRicerca:FOCUS {
+		background-image: none;
+	}
+	
+
+	.topnav {
+		list-style: none;
+	display:inline;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: #333;
+size: 100%;	
+	
+	}
+	.topnav>li {
+		display: inline-block;
+	
+	}
+	.topnav>li>a {
+		color: white;
+		text-align: center;
+		padding: 4px 6px;
+		text-decoration: none;
+	}
+	#logo {
+		width: 50px;
+		height: 50px;
+	}
+}
+ 
+/*for desktop*/
+@media screen and (min-width: 900px) {
+	/* link di navigazione */
+	
+	
+	.navigation {
+		overflow: hidden;
+		width: 100%;
+	}
+	.navigation a {
+		background: #ccc;
+		color: #333;
+		font: bold 14px arial, helvetica, sans-serif;
+		display: block;
+		float: left;
+		padding: 4px 10px;
+		margin-right: 5px;
+		text-decoration: none;
+	}
+	.navigation a:active {
+		background-color: #999;
+	}
+ 
+	/*navigational bar*/
+	/*barra*/
+	.navBar {
+		background-color: #333;
+		width: 100%;
+	}
+	/*logo immagnine nella barra dei menu*/
+	#logo {
+		float: left;
+		width: 10%;
+		height: 120px;
+	}
+	/*icona carrello nella barra dei menu*/
+	.iconeBarraMenu {
+		width: 45px;
+		height: 45px;
+		position: absolute;
+		top: 48px;
+		margin-left: 25px;
+	}
+	/* Barra di ricerca*/
+	.barraRicerca {
+		margin-top: 50px;
+		margin-left: 2px;
+		width: 60%;
+		float: left;
+		height: 40px;
+		border: 2px solid black;
+		border-radius: 4px;
+		font-size: 20px;
+		background-color: white;
+		background-image: url('../icone/icoRicerca.png');
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+	.barraRicerca:FOCUS {
+		background-image: none;
+	}
+	/*bottone login nella barra dei menu*/
+	.bottoneLogin {
+		margin-top: 50px;
+		margin-left: 2%;
+		width: 60px;
+		height: 40px;
+		text-align: center;
+		color: white;
+		font: bold;
+		font-size: large;
+		background-color: #5F84CE;
+		https: //validator.w3.org/check border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+	}
+	.bottoneLogin:hover {
+		background-color: red
+	}
+	.bottoneLogin:active {
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+	
+	.bottoneLogout {
+		margin-top: 50px;
+		width: 70px;
+		height: 40px;
+		text-align: center;
+		color: white;
+		font: bold;
+		font-size: large;
+		background-color: #5F84CE;
+		https: //validator.w3.org/check border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+	}
+	.bottoneLogout:hover {
+		background-color: red
+	}
+	.bottoneLogout:active {
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+	
+	
+	
+	
+	/*div contenitore di login e carrello*/
+	#sxBarra {
+		float: right;
+		margin-top: 5px;
+	}
+	.headerForDesktop {
+		background-color: #333;
+	}
+ 
+	/*no smartphone*/
+	.headerForSmartphone {
+		display: none;
+	}
+	/*topnav*/
+	.topnav {
+		width: 100%;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		
+	}
+	/*elementi elenco principale*/
+	.topnav>li {
+		float: left;
+	}
+ 
+	/*collegamenti dell elenco principale*/
+	.topnav>li>a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 130%;
+	}
+ 
+	/*collegamenti dell elenco principale passaggio mouse*/
+	.topnav>li>a:hover: {
+		background-color: #5F84CE;
+		
+	}
+ 
+	/*elementi principali nella barra di navigazione passaggio mouse*/
+	li a:hover, .sottoMenu:hover {
+		background-color: #5F84CE;
+	}
+	/*sotto menu della barra di navigazione*/
+	.sottoMenu {
+		display: inline-block;
+		
+		
+	}
+	/*contenitore degli elementi del sotto menu*/
+	.contenitore_sottoMenu {
+		display: none;
+		position: absolute;
+		background-color:#333 ;
+		
+	}
+	/*link all'interno del contenitore del sotto menu*/
+	.contenitore_sottoMenu>a {
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		
+	}
+	/*link al passaggio del mouse nel sotto menu*/
+	.contenitore_sottoMenu a:hover {
+		background-color: #5F84CE;
+	}
+ 
+	/*sotto menu e contenitore del sotto menu al passaggio del mouse*/
+	.sottoMenu:hover .contenitore_sottoMenu {
+		display: block;
+	}
+}
+ 

@@ -1,0 +1,272 @@
+/* CSS per i dati di acquisto*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+.row::after {
+             content: "";
+             clear: both;
+             display: table;
+            }
+
+[class*="col-"] {
+                 float: left;
+                 padding: 15px;
+                }
+                
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}   
+
+/* For mobile phones: */
+[class*="col-"] {
+                 width: 100%;
+                }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html {
+	font-size: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.OrdineCompletato{border: 2px solid green;}
+
+.h1 {
+	text-transform: uppercase;
+	font-size: 120%;
+	text-align:center;
+	padding: 1%;
+	color: white;
+	background-color: #5F84CE;
+}
+/*Css per i prodotto in acquisto*/
+.ProdottoAcquistato {
+	border: 1px solid #5F84CE;
+	margin-top: 1%;
+}
+
+.ImmagineP {
+	width: 60%;
+	height: 40%;
+}
+
+.NomeP {
+	font-size: 120%;
+}
+
+.descrizioneP {
+	font-size: 110%;
+}
+
+.Prezzo {
+	font-size: 110%;
+	text-transform: uppercase;
+}
+
+.Prezzo span {
+	color: black;
+}
+
+.Quantita {
+	font-size: 110%;
+	text-transform: uppercase;
+}
+
+/*Css per inserire l'indirizzo di fatturazione dell'ordine*/
+.TabellaIndirizzo {
+	font-size: 110%;
+}
+
+.TabellaIndirizzo th {
+	text-transform: uppercase;
+}
+
+.NuovoIndirizzo {
+	text-align: left;
+}
+
+.titoloNi {
+	font-size: 110%;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.labelNI {
+	font-size: 120%;
+	font-weight: 200;
+}
+
+.inputNI {
+	width: 30%;
+	background-color: #5F84CE;
+	color: white;
+}
+/*CSS per la selezione del tipo di spedizine*/
+.TabellaSpedizone th {
+	text-transform: uppercase;
+}
+/*Css per la selezione del metodo di pagamento*/
+.MetodoPagamento {
+	border-bottom: 1px solid #5F84CE;
+}
+
+.MetodoP {
+	font-size: 110%;
+	font-weight: 200;
+}
+
+.Totale {
+	float: right;
+	margin-right: 5%;
+	font-size: 120%;
+	text-transform: uppercase;
+}
+
+.Conferma {
+	text-align: center;
+	font-size: 140%;
+	color: white;
+	text-transform: uppercase;
+	background-color: #5F84CE;
+	margin-top: 2%;
+}
+
+/*Per  tablet*/
+@media screen and (max-width: 820px) {
+	/*Css per i prodotto in acquisto*/
+	.Prezzo {
+		font-size: 100%;
+	}
+	.Quantita {
+		font-size: 100%;
+	}
+	.NomeP {
+		font-size: 100%;
+		text-transform: uppercase;
+	}
+	.descrizioneP {
+		font-size: 90%;
+	}
+
+	/*Css per inserire l'indirizzo di fatturazione dell'ordine*/
+	.TabellaIndirizzo {
+		font-size: 80%;
+	}
+	.TabellaIndirizzo th {
+		text-transform: uppercase;
+		font-size: 90%;
+	}
+	.NuovoIndirizzo {
+		text-align: left;
+	}
+	.titoloNi {
+		font-size: 90%;
+		font-weight: 300;
+	}
+	.labelNI {
+		font-size: 90%;
+		font-weight: 200;
+	}
+	.inputNI {
+		width: 40%;
+	}
+	/*CSS per la selezione del tipo di spedizine*/
+	.TabellaSpedizone {
+		font-size: 90%;
+	}
+	.TabellaSpedizone th {
+		font-size: 90%;
+	}
+	/*Css per la selezione del metodo di pagamento*/
+	.MetodoP {
+		font-size: 100%;
+		font-weight: 200;
+	}
+	.Totale {
+		font-size: 110%;
+	}
+}
+
+/*Per  smartphone*/
+@media screen and (max-width: 599px) {
+	/*Css per i prodotto in acquisto*/
+	.h1 {
+		font-size: 100%;
+	}
+	.ImmagineP {
+		width: 40%;
+		height: 30%;
+	}
+
+	/*Css per inserire l'indirizzo di fatturazione dell'ordine*/
+	.TabellaIndirizzo {
+		font-size: 70%;
+	}
+	.TabellaIndirizzo th {
+		text-transform: uppercase;
+		font-size: 70%;
+	}
+	.titoloNi {
+		font-size: 70%;
+		font-weight: 200;
+	}
+	.labelNI {
+		font-size: 80%;
+		font-weight: 200;
+	}
+	.inputNI {
+		width: 50%;
+	}
+	/*CSS per la selezione del tipo di spedizine*/
+	.TabellaSpedizone {
+		font-size: 70%;
+	}
+	.TabellaSpedizone th {
+		text-transform: uppercase;
+		font-size: 70%;
+	}
+	/*Css per la selezione del metodo di pagamento*/
+	.MetodoP {
+		font-size: 80%;
+		font-weight: 100;
+	}
+	.Totale {
+		font-size: 90%;
+	}
+	.Conferma {
+		font-size: 120%;
+	}
+}

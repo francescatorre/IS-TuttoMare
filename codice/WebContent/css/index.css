@@ -1,0 +1,388 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+.row::after {
+             content: "";
+             clear: both;
+             display: table;
+            }
+
+[class*="col-"] {
+                 float: left;
+                 padding: 15px;
+                }
+                
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}   
+
+/* For mobile phones: */
+[class*="col-"] {
+                 width: 100%;
+                }
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*for smartphone*/
+@media screen and (max-width: 900px) {
+
+	.listaCategorie {
+		display: none;
+	}
+	.immSlides {
+		margin-top: 2%;
+		margin-left: 2%;
+		width: 96%;
+		height: 320px;
+		border-radius: 5px;
+	}
+	#BottoneTopSmarthpone {
+		position: fixed;
+		bottom: 10px;
+		right: 15px;
+		background-image: url("../img/upArrow7070.png");;
+		background-position: center;
+		color: white;
+		cursor: pointer;
+		border-radius: 100px;
+		width: 70px;
+		height: 70px;
+		float: right;
+	}
+	#capoLista {
+		margin-top: 13px;
+	}
+	
+	.navi{margin-top:1%;
+	      text-align:center;
+	   }
+
+.navi ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      width: 100%;
+      background-color: #333;
+      font-weight:90px;
+      border-radius:5px;
+}
+.navi li:hover{
+	background-color:#5F84CE;
+	}
+.navi  ul li {
+  position: relative;
+  margin:0% 0%;
+  padding:1% 0%;
+  
+
+}
+
+.navi li ul {
+display: none;
+}
+.navi ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #333;
+ 
+}
+
+.navi li:hover  a {
+  color:white;  
+}
+.navi  li:hover ul a:hover {
+  background-color:#5F84CE;
+  color:white;
+}
+
+	
+	
+/* Prodotti più venduti per smartphone */
+.offerte{
+	 overflow: auto;
+     width:100% !important;  
+    height:600px !important; 
+   
+}
+.divH1 {
+	background-color: #333;
+	height: 60px;
+	width:100%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.PiuVenduti {
+	border-radius: 5px;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+table {
+	font-size: 100%;
+	color: black;
+}
+
+td, tr {
+	text-align: center;
+}
+
+.fotoProdotto {
+	width:100px;
+	height:80px;
+	padding: 1%;
+}
+
+.Marca {
+	font-weight: bold;
+	text-transform:uppercase;
+	color:blue;
+	text-decoration:none;
+	font-size:80%;
+	
+}
+.Marca:ACTIVE,.Marca:LINK,.Marca:VISITED,.Marca:HOVER{
+	text-transform:uppercase;
+	color:blue;
+	text-decoration:none;
+	font-size:80%;
+	}
+.Prezzo {
+	color: red;
+	font-weight: bold;
+	padding: 1%;
+}
+td{ 
+	border: 1px solid white;
+	height:200px;
+	margin-top:1%; 
+ }
+td:hover{
+	border-color:black;
+}	
+}
+
+/*for desktop*/
+@media screen and (min-width: 900px) {
+	/*slider image*/
+	#container {
+		margin: 30px;
+	}
+
+	/*immagini che scorrono*/
+	.mySlides {
+		float: right;
+		width: 80%;
+		margin-right: 2%;
+		margin-top: 1%;
+	}
+	.immSlides {
+		margin-left: 2%;
+		width: 96%;
+		border-radius: 5px;
+		height: 400px;
+	}
+
+	/* Fading animation */
+	.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+	@
+	-webkit-keyframes fade {
+		from {opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@
+keyframes fade {
+	from {opacity: .4
+}
+
+to {
+	opacity: 1
+}
+
+}
+	
+
+/*contenitore del menu laterale e dello slide show*/
+
+.menuLaterale {
+	width: 100%;
+	display: table;
+	margin-top: 2%;
+}
+
+
+
+.headerForDesktop {
+	background-color: #333;
+}
+
+.contenitoreLogo {
+	background-color: #333;
+}
+.navi{margin-top:1.2%;
+}
+
+.navi ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      width: 150px;
+      background-color: #333;
+      border-radius:5px;
+      font-weight:100px;
+}
+.navi ul li:hover{background-color:#5F84CE;}
+.navi  ul li {
+  position: relative;
+  margin:6% 0%;
+  padding:2% 0%; 
+
+}
+
+.navi li ul {
+  position: absolute;
+  left: 150px;
+  top: 0;
+  display: none;
+
+}
+.navi ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size:120%;
+ 
+}
+.navi  li:hover ul { display: block;
+                     
+                   }
+                   
+.navi li:hover  a {
+  color:white;
+   
+}
+.navi  li:hover ul a:hover {
+  background-color:#5F84CE;
+  color:white;
+}
+
+/*tabella centro pagina*/
+.imgCentro {
+	height: 50px;
+}
+
+#product_slider {
+	padding: 40px 30px 80px 30px;
+	background: url(../images/templatemo_slider.png) bottom center no-repeat;
+	display: block;
+}
+
+.bottoneTopSmartphone {
+	display: none;
+}
+
+/*Prodotti più venduti */
+
+.divH1 {
+	background-color: #333;
+	height: 70px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.PiuVenduti {
+	border-radius: 5px;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+table {
+	font-size: 110%;
+	color: black;
+}
+
+td, tr {
+	text-align: center;
+}
+td{ 
+	border: 1px solid white;
+     margin-bottom:1%;
+ }
+ td:hover{ 
+           border-color: black;
+           }
+ 
+
+.fotoProdotto {
+	width:200px;
+	height:140px;
+	padding: 2%;
+}
+
+.Marca {
+	font-weight: bold;
+	text-transform:uppercase;
+	color:black;
+	text-decoration:none;
+	font-size:100%;
+	padding: 1%;
+}
+.Marca:HOVER .Marca:ACTIVE .Marca:LINK .Marca:VISITED {
+	text-transform:uppercase;
+	color:blue;
+	text-decoration:none;
+	font-size:100%;
+	padding: 1%;
+	}
+
+.Prezzo {
+	color: red;
+	font-weight: bold;
+	padding: 1%;
+}
+
+}

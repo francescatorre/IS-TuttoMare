@@ -1,0 +1,259 @@
+/*inputText inserimento dati*/
+.inputRegistrazione {
+	width: 90%;
+	background-color: #ABCDEF;
+	padding: 12px 20px;
+	margin: 9px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 15px;
+	margin: 5px;
+}
+
+/*id inputText indirizzo*/
+#indirizzo {
+	width: 72%;
+	background-color: #ABCDEF;
+	padding: 12px 20px;
+	margin: 9px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+/*liste*/
+ul>li {
+	list-style-type: none;
+}
+/*radio button scelta sesso*/
+.radio {
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid;
+	background-color: #ABCDEF;
+	box-sizing: border-box;
+	color: #ABCDEF;
+}
+/*input data nel form */
+.data {
+	width: 15%;
+	padding: 12px 20px;
+	margin: 8px 0 0 25px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	box-sizing: border-box;
+	background-color: #ABCDEF;
+}
+/* input indirizzo civico nel form */
+#civico {
+	width: 15%;
+	padding: 12px 20px;
+	margin: 2px 0 0 25px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	box-sizing: border-box;
+	background-color: #ABCDEF;
+}
+
+.buttonForm {
+	background-color: #77DD77;
+	color: #ABCDEF;
+	padding: 14px 20px;
+	margin-left: 3px;
+	cursor: pointer;
+	width: 80%;
+	text-align: center;
+	color: #333;
+	font: bold;
+	font-size: large;
+	border-radius: 15px;
+	box-shadow: 0 9px #333;
+}
+/*bottone submit del form*/
+.buttonFormRegistrazione {
+	background-color: #ABCDEF;
+	color: #ABCDEF;
+	padding: 14px 20px;
+	margin: 15px 0;
+	margin-left: 150px;
+	cursor: pointer;
+	width: 50%;
+	text-align: center;
+	color: #333;
+	font: bold;
+	font-size: large;
+	border-radius: 15px;
+	box-shadow: 0 9px #333;
+}
+
+.buttonFormRegistrazione:hover {
+	opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtnRegistrazione {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainerRegistrazione {
+	text-align: center;
+	position: relative;
+}
+
+img.avatarRegistrazione {
+	width: 20%;
+	border-radius: 50%;
+}
+
+.inputFormRegistrazione {
+	padding: 10px;
+}
+
+span.pswRegistrazione {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.classDivFormRegistrazione {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	/*opacità dello sfondo*/
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* form registrazione immissione dai*/
+.formLoginRegistrazione {
+	background-color: white;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	border-radius: 15px;
+	width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.closeRegistrazione {
+	position: static;
+	color: #000;
+	margin-right: 25px;
+	float: right;
+	font-size: 35px;
+	font-weight: bold;
+}
+/*lable descrizione*/
+.label {
+	color: #333;
+	margin: 3px;
+}
+
+.tipoDescrizione {
+	font-style: normal;
+	font-size: 3em;
+	size: 55em;
+	color: #333;
+	border-bottom-style: solid;
+	border-bottom-color: #ABCDEF;
+}
+
+.closeRegistrazione:hover, .closeRegistrazione:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animateRegistrazione {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@
+-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes animatezoom {
+	from {transform: scale(0)
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+#hidden {
+	display: none;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 900px) {
+	.label {
+		font-size: 100%;
+	}
+	.tipoDescrizione {
+		font-size: 100%;
+	}
+	.formLoginRegistrazione {
+		background-color: white;
+		margin: 1% auto 15% auto;
+		/* 5% from the top, 15% from the bottom and centered */
+		border: 1px solid #888;
+		border-radius: 15px;
+		width: 90%; /* Could be more or less, depending on screen size */
+	}
+	#civico {
+		width: 25%;
+		padding: 12px 20px;
+		border: 1px solid #ccc;
+		border-radius: 15px;
+		box-sizing: border-box;
+		background-color: #ABCDEF;
+	}
+	#indirizzo {
+		width: 50%;
+		background-color: #ABCDEF;
+		padding: 12px 20px;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		border-radius: 15px;
+	}
+	#desktop {
+		display: none;
+	}
+	#hidden {
+		display: inline-block;
+	}
+	.buttonFormRegistrazione {
+		background-color: #ABCDEF;
+		color: #ABCDEF;
+		padding: 14px 20px;
+		margin: 15px 0;
+		margin-left: 40%;
+		cursor: pointer;
+		width: 50%;
+		text-align: center;
+		color: #333;
+		font: bold;
+		font-size: large;
+		border-radius: 15px;
+		box-shadow: 0 9px #333;
+	}
+}
